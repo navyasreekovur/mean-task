@@ -1,0 +1,24 @@
+<div style="width: 400px; margin: auto;">
+  <div class="submit-form">
+
+      <div class="form-group">
+        <label for="title">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          required
+          [(ngModel)]="userPassword"
+          name="password"
+        />
+        Salt: <label for="salt" name="salt">{{salt}}</label><br>
+        Encrypted Password :<label for="passwordHash"  name="passwordHash">{{passwordHash}}</label>
+       
+      </div>
+    
+      <button (click)="saltgeneration()" class="btn btn-success">Encrypt</button>
+    
+
+   
+  </div>
+</div>
